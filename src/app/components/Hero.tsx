@@ -19,8 +19,8 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-        {/* Left */}
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }}>
+        {/* Left – text (below image on mobile, left on desktop) */}
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }} className="order-2 lg:order-1">
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white text-[#1C1C1A] text-sm font-medium px-4 py-2 rounded-full shadow-sm mb-6">
@@ -66,18 +66,17 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Right – original collage image */}
+        {/* Right – collage image (top on mobile, right on desktop) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="flex justify-center lg:justify-end"
+          className="order-1 lg:order-2 flex justify-center lg:justify-end"
         >
           <img
-            src="/food-plates.jpg"
+            src="https://ferienhaus-am-meer.org/wp-content/uploads/2026/04/Hero-Image-Collage-1-e1776505544843.png"
             alt="Frisch gekochtes Mittagessen – täglich geliefert"
-            className="w-full max-w-lg rounded-3xl object-cover drop-shadow-xl"
-            style={{ maxHeight: "520px" }}
+            className="w-full max-w-lg object-contain drop-shadow-xl"
           />
         </motion.div>
       </div>
