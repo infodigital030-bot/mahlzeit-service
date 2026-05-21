@@ -2,33 +2,31 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
-const BASE = "https://ferienhaus-am-meer.org/wp-content/uploads/2026/04";
-
 const dishes = [
   {
-    img: `${BASE}/roasted-chicken-breast-with-seasonal-vegetables-and-herb-potatoes-on-a-white-plate-food-photography.png`,
-    name: "Eierkuchen mit dunkler Beerensoße",
-    tags: ["Herzhaft", "Süß"],
+    img: "/gerichte/1005_s.jpg",
+    name: "Bratwurst mit Rotkohl und Kartoffelpüree",
+    tags: ["Klassiker", "Herzhaft"],
   },
   {
-    img: `${BASE}/roasted-chicken-breast-with-seasonal-vegetables-and-herb-potatoes-on-a-white-plate-food-photography-1.png`,
-    name: "Geschnetzeltes in Pilzrahmsoße mit Spätzle",
-    tags: ["Herzhaft", "Klassiker"],
+    img: "/gerichte/1007_s.jpg",
+    name: "Paniertes Schnitzel mit Bohnen und Bratkartoffeln",
+    tags: ["Herzhaft", "Deftig"],
   },
   {
-    img: `${BASE}/roasted-chicken-breast-with-seasonal-vegetables-and-herb-potatoes-on-a-white-plate-food-photography-2.png`,
-    name: "Cremige Gemüsepfanne mit Bällchen",
-    tags: ["Fisch", "Gesund"],
+    img: "/gerichte/1053_s.jpg",
+    name: "Hähnchen in Paprikasoße mit Nudeln",
+    tags: ["Beliebt", "Mild"],
   },
   {
-    img: `${BASE}/roasted-chicken-breast-with-seasonal-vegetables-and-herb-potatoes-on-a-white-plate-food-photography.png`,
-    name: "Kartoffelpuffer mit Apfelmus",
-    tags: ["Deftig", "Beliebt"],
+    img: "/gerichte/4119_s.jpg",
+    name: "Rinderroulade mit Kartoffelsalat und Möhren",
+    tags: ["Klassiker", "Deftig"],
   },
   {
-    img: `${BASE}/roasted-chicken-breast-with-seasonal-vegetables-and-herb-potatoes-on-a-white-plate-food-photography-1.png`,
-    name: "Pasta mit Tomatensoße",
-    tags: ["Vegetarisch", "Italienisch"],
+    img: "/gerichte/4127_s.jpg",
+    name: "Schweinebraten mit Sauce und Salzkartoffeln",
+    tags: ["Klassiker", "Sonntag"],
   },
 ];
 
