@@ -1,8 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 
-const BASE = "https://ferienhaus-am-meer.org/wp-content/uploads/2026/04";
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#F5F0E8] min-h-[85vh] flex items-center">
@@ -76,9 +74,10 @@ export default function Hero() {
           className="flex justify-center lg:justify-end"
         >
           <img
-            src={`${BASE}/Hero-Image-Collage-1-e1776505544843.png`}
+            src="/food-plates.jpg"
             alt="Frisch gekochtes Mittagessen – täglich geliefert"
-            className="w-full max-w-lg object-contain drop-shadow-xl"
+            className="w-full max-w-lg rounded-3xl object-cover drop-shadow-xl"
+            style={{ maxHeight: "520px" }}
           />
         </motion.div>
       </div>
